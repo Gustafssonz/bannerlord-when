@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Express handlebars</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    {{{body}}}
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on("update", function(data){
+            const year = document.getElementById("year");
+            const month = document.getElementById("month");
+            const day = document.getElementById("day");
+            const hour = document.getElementById("hour");
+            const minute = document.getElementById("minute");
+            const second = document.getElementById("second");
+
+            year.innerHTML = data.year;
+            month.innerHTML = data.month;
+            day.innerHTML = data.day;
+            hour.innerHTML = data.hour;
+            minute.innerHTML = data.minute;
+            second.innerHTML = data.second;
+        });
+    </script>
+  </body>
+</html>
