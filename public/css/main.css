@@ -1,10 +1,21 @@
 body {
     margin: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
+    background-image: url(https://stmed.net/sites/default/files/mount-%26-blade-ii%3A-bannerlord-hd-wallpapers-33407-3109859.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+@font-face { font-family: Mordred; src: url('/public/fonts/mordred.ttf'); } 
+
+
 .container {
+    font-family: Mordred;
+    font-size: 16px;
+    font-size: 3vw;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
