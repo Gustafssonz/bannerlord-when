@@ -18,7 +18,6 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs')
 // App Use
 app.use((request, response, next) => {
-  console.log(request.headers)
   next()
 })
 
