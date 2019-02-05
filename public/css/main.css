@@ -12,7 +12,7 @@ p {
     font-size: 18px;
 }
 
-@font-face { font-family: Mordred; src: url('/public/fonts/mordred.ttf'); } 
+@font-face { font-family: Mordred; src: url('/fonts/mordred.ttf'); } 
 
 
 .container {
@@ -26,6 +26,17 @@ p {
     height: 100%;
     width: 100%;
     flex-direction: column;
+}
+
+.row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card-child{
+    width: 400px;
+    display: inline-block;
 }
 
 .card-content {
