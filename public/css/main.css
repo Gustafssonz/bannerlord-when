@@ -8,6 +8,10 @@ body {
     background-position: center;
 }
 
+p {
+    font-size: 18px;
+}
+
 @font-face { font-family: Mordred; src: url('/public/fonts/mordred.ttf'); } 
 
 
@@ -22,4 +26,8 @@ body {
     height: 100%;
     width: 100%;
     flex-direction: column;
+}
+
+.card-content {
+    color: black;
 }
