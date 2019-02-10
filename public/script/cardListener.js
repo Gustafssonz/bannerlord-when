@@ -1,8 +1,16 @@
-$(".owl-carousel").owlCarousel({
-  items: 3,
-  itemsDesktop: [1000, 3],
-  itemsDesktopSmall: [979, 2],
-  itemsTablet: [768, 2],
-  itemsMobile: [650, 1],
-  pagination: true
-});
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})

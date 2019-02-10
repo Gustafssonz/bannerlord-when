@@ -34,11 +34,6 @@ p {
     white-space: nowrap;
 }
 
-.card-child{
-    width: 400px;
-    display: inline-block;
-}
-
-.card-content {
-    color: black;
+.card{
+    height: 300px;
 }
