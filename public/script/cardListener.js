@@ -1,19 +1,8 @@
-$(document).ready(function(){
-    $('.carousel').carousel({
-      dist:-30
-    });
-    
-  });
-
-
- /*  $(document).ready(function(){
-    $('.carousel').carousel(
-    {
-      dist: 0,
-      padding: 0,
-      fullWidth: true,
-      indicators: true,
-      duration: 100,
-    }
-    );
-  }); */
+$(".owl-carousel").owlCarousel({
+  items: 3,
+  itemsDesktop: [1000, 3],
+  itemsDesktopSmall: [979, 2],
+  itemsTablet: [768, 2],
+  itemsMobile: [650, 1],
+  pagination: true
+});
