@@ -12,10 +12,12 @@ p {
     font-size: 18px;
 }
 
-@font-face { font-family: Mordred; src: url('/fonts/mordred.ttf'); } 
+@font-face {
+    font-family: Mordred;
+    src: url('/fonts/mordred.ttf');
+}
 
-
-.container {
+/*.container {
     font-family: Mordred;
     font-size: 16px;
     font-size: 3vw;
@@ -32,8 +34,12 @@ p {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-}
+}*/
 
-.card{
+/*.card{
     height: 300px;
+}*/
+
+.owl-carousel .item {
+    /*width: 300px;*/
 }
