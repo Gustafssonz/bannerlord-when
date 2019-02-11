@@ -8,8 +8,18 @@ body {
     background-position: center;
 }
 
-p {
-    font-size: 18px;
+.owl-container{
+    padding-top: 2rem;
+    height: 25rem;
+    width: 40rem;
+    margin: auto;
+}
+
+
+.timer{
+    color: white;
+    font-family: Mordred;
+    align-self: inherit;
 }
 
 @font-face {
@@ -17,29 +27,18 @@ p {
     src: url('/fonts/mordred.ttf');
 }
 
-/*.container {
+h2{
     font-family: Mordred;
     font-size: 16px;
     font-size: 3vw;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
 }
 
-.row {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}*/
 
-/*.card{
-    height: 300px;
-}*/
+/* CARD */
 
-.owl-carousel .item {
-    /*width: 300px;*/
+.card-content p {
+    font-family: Mordred;
+    font-size: 16px;
+
 }
