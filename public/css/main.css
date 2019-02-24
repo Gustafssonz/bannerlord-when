@@ -106,7 +106,9 @@ h2 {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
-    h2, .timer {
+
+    h2,
+    .timer {
         font-size: x-large;
     }
 
@@ -144,5 +146,6 @@ h2 {
     .card-img-top {
         height: 100%;
         max-height: 100px;
+        object-fit: cover;
     }
 }
