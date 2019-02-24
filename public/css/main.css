@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     background-image: url(https://images5.alphacoders.com/548/thumb-1920-548769.jpg);
@@ -9,48 +10,32 @@ body {
 }
 
 .container{
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
+/* Head Title ORDER 1 */
+
+.header-title{
     color: white;
-        font-family: Mordred;
-        align-self: inherit;
-        font-size: larger;
-        margin: 2rem;
-        font-size: -webkit-xxx-large;
+    font-family: Mordred;
+    align-self: inherit;
+    font-size: 90%;
+    margin: 1rem;
+    font-size: 5rem;
+    order: 0;
 }
-
-/* .owl-container{
-    padding-top: 2rem;
-    width: 40rem;
-    margin: auto;
-    height: 50%;
-} */
-.owl-carousel{
-    z-index: 1;
-}
-
-.owl-carousel .owl-stage-outer{
-    height: auto;
-    padding: 2rem;
-    
-}
-
-.owl-item.active.center {
-    height: auto;
-    width: wrap;
-    transform: scale(1.1, 1.2);
-}
-
-/* TIMER */
+/* TIMER ORDER 2 */
 .timer-container{
     text-align: center;
     left: 50%;
-    z-index: 0;
+    order: 1;
+    justify-content: center;
 }
 
     .timer{
@@ -93,4 +78,28 @@ h1{
     height: 15vw;
     object-fit: contain;
     display: inline;
+}
+
+/* OWL Container ORDER 3 */
+
+/* .owl-container{
+    padding-top: 2rem;
+    width: 40rem;
+    margin: auto;
+    height: 50%;
+} */
+.owl-carousel{
+    order: 2;
+}
+
+.owl-carousel .owl-stage-outer{
+    height: auto;
+    padding: 2rem;
+    
+}
+
+.owl-item.active.center {
+    height: auto;
+    width: wrap;
+    transform: scale(1.1, 1.2);
 }
