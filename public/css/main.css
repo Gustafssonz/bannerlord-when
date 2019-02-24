@@ -9,7 +9,7 @@ body {
     background-position: center;
 }
 
-.container{
+.container {
     padding: 0;
     text-align: center;
     height: 100%;
@@ -21,7 +21,7 @@ body {
 
 /* Head Title ORDER 1 */
 
-.header-title{
+.header-title {
     color: white;
     font-family: Mordred;
     align-self: inherit;
@@ -30,31 +30,32 @@ body {
     font-size: 5rem;
     order: 0;
 }
+
 /* TIMER ORDER 2 */
-.timer-container{
+.timer-container {
     text-align: center;
     left: 50%;
     order: 1;
     justify-content: center;
 }
 
-    .timer{
-        color: white;
-        font-family: Mordred;
-        align-self: inherit;
-        font-size: xx-large;
+.timer {
+    color: white;
+    font-family: Mordred;
+    align-self: inherit;
+    font-size: xx-large;
 
-    }
+}
 
-    @font-face {
-        font-family: Mordred;
-        src: url('/fonts/mordred.ttf');
-    }
+@font-face {
+    font-family: Mordred;
+    src: url('/fonts/mordred.ttf');
+}
 
-    h2{
-        font-family: Mordred;
-        font-size: xx-large;
-        color: white;
+h2 {
+    font-family: Mordred;
+    font-size: xx-large;
+    color: white;
 }
 
 /* CARD */
@@ -88,18 +89,55 @@ body {
     margin: auto;
     height: 50%;
 } */
-.owl-carousel{
+.owl-carousel {
     order: 2;
 }
 
-.owl-carousel .owl-stage-outer{
+.owl-carousel .owl-stage-outer {
     height: auto;
     padding: 2rem;
-    
 }
 
 .owl-item.active.center {
     height: auto;
     width: wrap;
     transform: scale(1.1, 1.2);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        padding: 2rem 0;
+    }
+
+    .owl-item.active.center {
+        transform: scale(1.2, 1.2);
+    }
+
+    .owl-item .card {
+        width: auto;
+    }
+
+    .card-body {
+        padding: 5px;
+        min-height: 100px;
+    }
+
+    .card-body .card-title {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .card-body .card-text {
+        font-size: 12px;
+    }
+
+    .card-img-top {
+        height: 100%;
+        max-height: 100px;
+    }
 }
