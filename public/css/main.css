@@ -31,12 +31,11 @@ body {
     order: 0;
 }
 /* TIMER ORDER 2 */
-.timer-container{
+/* .timer-container{
     text-align: center;
-    left: 50%;
     order: 1;
     justify-content: center;
-}
+} */
 
     .timer{
         color: white;

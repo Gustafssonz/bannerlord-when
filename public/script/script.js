@@ -1,7 +1,9 @@
 $(document).ready(function() {
-	$('.owl-carousel').owlCarousel({
+    var $owl = $('.owl-carousel');
+
+	$owl.owlCarousel({
         loop: false,
-        items: 4,
+        items: 1,
         margin: 10,
         center: true,
         startPosition: 1,
@@ -17,6 +19,9 @@ $(document).ready(function() {
 
     });
 
-
-
+    $owl.on('click', '.owl-item', function() {
+        var index = $(this).index();
+    
+        $owl.trigger('to.owl.carousel', [index, 200, true]);
+    });
 });
