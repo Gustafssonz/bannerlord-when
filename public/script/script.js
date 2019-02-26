@@ -6,7 +6,7 @@ $(document).ready(function() {
         items: 1,
         margin: 10,
         center: true,
-        startPosition: 1,
+        startPosition: 4,
         responsiveClass:true,
         responsive:{
         600:{

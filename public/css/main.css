@@ -6,10 +6,10 @@ body {
     background-image: url(https://images5.alphacoders.com/548/thumb-1920-548769.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
 }
 
-.container{
+.container {
     padding: 0;
     text-align: center;
     height: 100%;
@@ -21,7 +21,7 @@ body {
 
 /* Head Title ORDER 1 */
 
-.header-title{
+.header-title {
     color: white;
     font-family: Mordred;
     align-self: inherit;
@@ -30,39 +30,47 @@ body {
     font-size: 5rem;
     order: 0;
 }
+
 /* TIMER ORDER 2 */
+<<<<<<< HEAD
 /* .timer-container{
+=======
+.timer-container {
+>>>>>>> 61d5ad19196ca842f251db6b3560ad54d157064f
     text-align: center;
     order: 1;
     justify-content: center;
 } */
 
-    .timer{
-        color: white;
-        font-family: Mordred;
-        align-self: inherit;
-        font-size: xx-large;
+.timer {
+    color: white;
+    font-family: Mordred;
+    align-self: inherit;
+    font-size: xx-large;
 
-    }
+}
 
-    @font-face {
-        font-family: Mordred;
-        src: url('/fonts/mordred.ttf');
-    }
+@font-face {
+    font-family: Mordred;
+    src: url('/fonts/mordred.ttf');
+}
 
-    h2{
-        font-family: Mordred;
-        font-size: xx-large;
-        color: white;
+h2 {
+    font-family: Mordred;
+    font-size: xx-large;
+    color: white;
 }
 
 /* CARD */
+.owl-item {
+    transition: transform 200ms ease-out;
+}
+
 .owl-item .card {
     width: 13rem;
     height: auto;
     cursor: pointer;
     margin: 3% 4%;
-    transition: margin 0.4s ease;
 }
 
 .card-content p {
@@ -87,18 +95,63 @@ body {
     margin: auto;
     height: 50%;
 } */
-.owl-carousel{
+.owl-carousel {
     order: 2;
 }
 
-.owl-carousel .owl-stage-outer{
+.owl-carousel .owl-stage-outer {
     height: auto;
     padding: 2rem;
-    
 }
 
 .owl-item.active.center {
     height: auto;
     width: wrap;
     transform: scale(1.1, 1.2);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+    h2,
+    .timer {
+        font-size: x-large;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        padding: 2rem 0;
+    }
+
+    .owl-item.active.center {
+        transform: scale(1.2, 1.2);
+    }
+
+    .owl-item .card {
+        width: auto;
+    }
+
+    .card-body {
+        padding: 5px;
+        min-height: 100px;
+    }
+
+    .card-body .card-title {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .card-body .card-text {
+        font-size: 12px;
+    }
+
+    .card-img-top {
+        height: 100%;
+        max-height: 100px;
+        object-fit: cover;
+    }
 }
